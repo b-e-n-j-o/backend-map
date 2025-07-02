@@ -23,6 +23,12 @@ def create_app():
     
     return app
 
+if __name__ == '__main__':
+    import os
+    app = create_app()
+    port = int(os.environ.get('PORT', 8000))
+    app.run(host='0.0.0.0', port=port, debug=False)
+
 # if __name__ == '__main__':
 #     app = create_app()
 #     app.run(debug=Config.DEBUG, port=Config.PORT) 
