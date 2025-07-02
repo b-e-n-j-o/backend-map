@@ -5,3 +5,4 @@ requests==2.31.0
 lxml==4.9.3
 shapely==2.0.2
 gunicorn==21.2.0
+numpy<2
